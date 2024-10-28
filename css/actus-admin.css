@@ -1,0 +1,318 @@
+#actus-plugins *,
+#actus-plugins-local *,
+.actus-admin * {
+    box-sizing: border-box;
+}
+.actus-admin {
+    margin: 20px 20px 0 0;
+}
+ 
+:root {
+    --colorActusA: hsl(183, 83%, 48%);
+    --colorActusB: hsl(207, 15%, 22%);
+    --colorActusC: hsl(207, 15%, 62%);
+    --txAMA: 0 0 1px hsla(34, 100%, 50%, 0.4);
+}
+
+/* ***************** */
+/*  LAYOUT ELEMENTS  */
+/* ***************** */
+.actus-sep-4 {
+    width: 100%;
+    height: 4px;
+    clear: both;
+}
+.actus-sep-8 {
+    width: 100%;
+    height: 8px;
+    clear: both;
+}
+.actus-sep-16 {
+    width: 100%;
+    height: 16px;
+    clear: both;
+}
+.actus-sep-32 {
+    width: 100%;
+    height: 32px;
+    clear: both;
+}
+.actus-sep-64 {
+    width: 100%;
+    height: 64px;
+    clear: both;
+}
+.actus-sep-128 {
+    width: 100%;
+    height: 128px;
+    clear: both;
+}
+
+
+/* ************************* */
+/* ACTUS PLUGIN ADMIN HEADER */
+/* ************************* */
+#actus-plugins,
+#actus-plugins-local {
+    margin: 20px 20px 0 0;
+}
+.actus-admin-header {
+    width: 100%;
+    height: 64px; 
+    position: relative;
+    background: var(--colorActusB);
+}
+.actus-admin-header img {
+    width: auto;
+    height: 64px;
+    padding: 8px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.actus-admin-header img.actus-admin-header-title {
+    left: initial;
+    right: 0;
+}
+.actus-admin-header h2.actus-admin-header-title {
+    left: initial;
+    right: 16px;
+    top: 0px;
+    font-size: 22px;
+    color: white;
+}
+.actus-admin-header img.actus-admin-header-logo { padding: 12px; }
+.actus-plugin-version {
+    position: absolute;
+    bottom: 2px;
+    right: 94px;
+    font-size: 11px;
+    color: hsla(0, 0%, 100%, 0.3);
+}
+
+/* *************************** */
+/* ACTUS PLUGIN ADMIN INFO BOX */
+/* *************************** */
+.actus-admin-info,
+.actus-admin-channel {
+    width: 100%;
+    padding: 16px;
+    margin-top: 4px;
+    position: relative;
+    background: hsla(53, 0%, 0%, 0.15);
+}
+.actus-admin-channel {
+    background: white;
+    text-align: center;
+}
+.actus-admin-info-icon {
+    margin-left: -4px;
+    opacity: 0.5;
+    float: left;
+}
+.actus-admin-info-icon img {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+.actus-admin-info-text {
+    width: calc(100% - 56px);
+    float: left;
+}
+.actus-admin-info-text ul {
+    list-style: disc;
+    padding-left: 16px;
+}
+.actus-admin-info-text h3,
+.actus-admin-info-text li,
+.actus-admin-info-text p {
+    margin: 0;
+    color: white;
+}
+.actus-admin-info-text li { margin: 4px 0; }
+.actus-admin-info-text a {
+    margin: 0 1px;
+    color: hsla(343, 50%, 34%, 0.6);
+    font-weight: 700;
+    text-decoration: none;
+}
+.actus-admin-info-text a:hover {
+    color: hsla(343, 50%, 34%, 0.9);
+}
+.actus-admin-info-text b {
+    font-weight: 700;
+}
+
+
+
+
+/* *********************** */
+/* ACTUS PLUGIN ADMIN MAIN */
+/* *********************** */
+.actus-admin-main {
+    width: 100%;
+    min-height: 128px;
+    padding: 8px 16px;
+    margin-top: 4px;
+    position: relative;
+    background: white;
+}
+.actus-admin-screenshot {
+    width: 100%;
+    text-align: center;
+}
+.actus-admin-screenshot img {
+    width: 500px;
+    max-width: 90%;
+    height: auto;
+}
+
+.actus-admin-screenshot.large img { width: 700px; }
+
+
+
+/* ************************* */
+/* ACTUS PLUGIN ADMIN FOOTER */
+/* ************************* */
+.actus-admin-footer {
+    width: 100%;
+    height: 32px;
+    margin-top: 4px;
+    position: relative;
+    background: hsl(343, 50%, 34%);
+    color: white;
+}
+.actus-admin-footer .actus,
+.actus-admin-footer .actus-sic {
+    padding: 8px;
+    color: hsla(0, 0%, 100%, 0.5);
+    float: left;
+}
+.actus-admin-footer .actus-sic {
+    float: right;
+}
+.actus-admin-footer .actus a,
+.actus-admin-footer .actus-sic a,
+.actus-admin-footer .actus a:visited,
+.actus-admin-footer .actus-sic a:visited {
+    color: hsla(0, 0%, 100%, 0.5);
+    text-decoration: none;
+    font-weight: 700;
+}
+.actus-admin-footer .actus a:hover,
+.actus-admin-footer .actus-sic a:hover {
+    color: hsla(0, 0%, 100%, 1);
+}
+
+
+
+
+
+/* ******************** */
+/* ACTUS PLUGINS LAYOUT */
+/* ******************** */
+#actus-plugins {
+    margin: 20px 20px 0 0;
+    background: var(--colorActusB);
+}
+.actus-plugins-top,
+.actus-plugins-bottom {
+    width: 100%;
+    background: var(--colorActusC);
+    color: var(--colorActusA);
+    text-align: center;
+}
+.actus-plugins-logo {
+    width: auto;
+    height: 80px;
+    opacity: 0.5;
+}
+#actus-plugins h1 {
+    width: 100%;
+    padding: 12px;
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.5);
+    opacity: 0.9;
+    font-size: 22px;
+    font-weight: 100;
+}
+.actus-plugins-main {
+    width: 100%;
+    min-height: 160px;
+    text-align: center;
+    background: var(--colorActusC);
+}
+.actus-plugins-main h2,
+.actus-plugins-main li {
+    display: inline-block;
+    padding: 16px 64px;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 100;
+    color: hsla(0, 0%, 100%, 0.5);
+    border-top: 1px solid hsla(0, 0%, 100%, 0.2);
+    opacity: 0.75;
+}
+
+.actus-plugins-main li {
+    display: block;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 0;
+}
+
+
+.actus-plugins-main li a {
+    color: hsl( 343,  50%,  34% );
+    text-decoration: none;
+}
+
+.actus-plugins-main li a img {
+    width: 400px;
+    height: auto;
+    box-shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.7);
+}
+
+.actus-plugins-bottom {
+    position: fixed;
+    bottom: 0px;
+    width: calc(100% - 200px);
+    background: var(--colorActusB);
+    border-bottom: 20px solid #f1f1f1;
+    z-index: 9;
+}
+.actus-plugins-bottom a {
+    text-decoration: none;
+}
+#actus-plugins .actus-plugins-bottom a h1 {
+    color: white;
+    opacity: 0.3;
+}
+#actus-plugins .actus-plugins-bottom a:hover h1 { opacity: 0.7 } 
+ 
+
+
+
+
+/* **************************************************** */
+/* ***************************************** RESPONSIVE */
+/* **************************************************** */
+
+
+/* ***************************************** 960 */
+/* ********************************************* */
+@media only screen and (max-width: 960px) {
+
+    .actus-plugins-bottom { width: calc(100% - 76px); }
+
+}
+
+
+/* ***************************************** 500 */
+/* ********************************************* */
+@media only screen and (max-width: 500px) {
+
+    .actus-admin-footer { font-size: 12px }
+
+}
